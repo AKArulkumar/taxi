@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hourly Rental - Taxi Reservation System</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+/* Custom CSS styles */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover {
+    color: #007bff !important;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Taxi Reservation System</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="logout .html">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container text-center">
+    <h2>Hourly Rental</h2>
+    <!-- Hourly Rental form -->
+    <form action="Hourbookservlet" method="post">
+        <div class="form-group">
+            <label for="pickupLocation">Pickup Location:</label>
+            <input type="text" class="form-control" id="pickupLocation" name="pickupLocation">
+        </div>
+        <div class="form-group">
+            <label for="dropLocation">Drop Location:</label>
+            <input type="text" class="form-control" id="dropLocation" name="dropLocation">
+        </div>
+        <div class="form-group">
+            <label for="carType">Car Type:</label>
+            <select class="form-control" id="carType" name="carType">
+                <option value="luxury">Luxury</option>
+                <option value="medium">Medium</option>
+                <option value="ordinary">Ordinary</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="numberOfHours">Number of Hours:</label>
+            <input type="number" class="form-control" id="numberOfHours" name="numberOfHours" min="1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

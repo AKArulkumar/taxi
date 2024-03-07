@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAXI RESERVATION SYSTEM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navbar styles */
+        .navbar {
+            background-color: #020f08;
+            border: none;
+            border-radius: 0;
+        }
+        .navbar-brand, .navbar-nav > li > a {
+            color: #eee !important;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+        .navbar-brand:hover, .navbar-nav > li > a:hover {
+            background-color: #333;
+        }
+        /* Jumbotron styles */
+        .jumbotron {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            color: #eee;
+            padding: 100px 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        .jumbotron h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        .jumbotron p {
+            font-size: 20px;
+        }
+        /* Services styles */
+        .services {
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .services h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .services .col-md-4 {
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .services .col-md-4:hover {
+            background-color: #f9f9f9;
+            transform: translateY(-5px);
+        }
+        .services img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        /* Contact styles */
+        .contact {
+            background-color: #020f08;
+            color: #eee;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .contact h1, .contact h2, .contact h3 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+   
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">TAXI RESERVATION SYSTEM</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="signinview.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron" id="home">
+   <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <h1>BOOKING THE TAXI</h1>
+            <p>To easily book a taxi in different areas and various times</p>
+        </div>
+        <div class="col-md-6">
+            <img src="images/tax.png" alt="taxi" style="width: 100%;">
+            <h1> WELCOME TO THE TAXI BOOKING SYSTEM  HAVE SAFE RIDE</h1>
+        </div>
+      </div>
+   </div>
+</div>
+
+<div class="services" id="services">
+    <div class="container">
+        <h1>Services</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Rental</h2>
+                <img src="images/h1.jpg" alt="Rental">
+                <p>Book a taxi for a fixed duration according to your needs.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Booking</h2>
+                <img src="images/booking.jpeg" alt="Booking">
+                <p>Make a reservation for a taxi at a specific date and time.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Hour Rental</h2>
+                <img src="images/h2.jpeg" alt="Hour Rental">
+                <p>Hire a taxi on an hourly basis for short trips or errands.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <div class="container">
+        <h1>Contact Info</h1>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h2>Company Name: EASY TAXI</h2>
+                <h3>Phone: 928272772</h3>
+                <h3>Location: Karur</h3>
+                <h3>Email: 123@gmail.com</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
